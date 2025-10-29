@@ -12,9 +12,10 @@ int main() {
 
   // Área para entrada de dados
   printf("Insira os dados da carta 01 abaixo: \n");
+  printf("------------------------------------\n");
 
   printf("Estado: ");
-  scanf("%c", &estado01);
+  scanf(" %c", &estado01);
 
   printf("Código da Carta: ");
   scanf("%s", codigo01);
@@ -23,16 +24,44 @@ int main() {
   scanf("%s", cidade01);
 
   printf("Polulação: ");
-  scanf("%d", populacao01);
+  scanf("%d", &populacao01);
   
   printf("Área KM²: ");
-  scanf("%f", area01);
+  scanf("%f", &area01);
 
   printf("PIB: ");
-  scanf("%f", pib01);
+  scanf("%f", &pib01);
 
   printf("Pontos Turísticos: ");
-  scanf("%d", turismo01);
+  scanf("%d", &turismo01);
+
+  printf("\n");
+
+  printf("Insira os dados da carta 02 abaixo: \n");
+  printf("------------------------------------\n");
+
+  printf("Estado: ");
+  scanf(" %c", &estado02);
+
+  printf("Código da Carta: ");
+  scanf("%s", codigo02);
+
+  printf("Nome da Cidade: ");
+  scanf("%s", cidade02);
+
+  printf("Polulação: ");
+  scanf("%d", &populacao02);
+  
+  printf("Área KM²: ");
+  scanf("%f", &area02);
+
+  printf("PIB: ");
+  scanf("%f", &pib02);
+
+  printf("Pontos Turísticos: ");
+  scanf("%d", &turismo02);
+  
+  printf("\n");
 
   // Área para exibição dos dados da cidade
   printf("- Carta 01 -\n");
@@ -40,9 +69,20 @@ int main() {
   printf("CÓDIGO: %s\n", codigo01);
   printf("NOME DA CIDADE: %s\n", cidade01);
   printf("POPULAÇÃO: %d\n", populacao01);
-  printf("ÁREA: %f\n", area01);
-  printf("PIB: %f\n", pib01);
+  printf("ÁREA: %f KM²\n", area01);
+  printf("PIB: %f bilhões de reais\n", pib01);
   printf("NÚMERO DE PONTOS TURÍSTICOS: %d\n", turismo01);
+
+  printf("------------------------------------\n");
+
+  printf("- Carta 02 -\n");
+  printf("ESTADO: %c\n", estado02);
+  printf("CÓDIGO: %s\n", codigo02);
+  printf("NOME DA CIDADE: %s\n", cidade02);
+  printf("POPULAÇÃO: %d\n", populacao02);
+  printf("ÁREA: %f KM²\n", area02);
+  printf("PIB: %f bilhões de reais\n", pib02);
+  printf("NÚMERO DE PONTOS TURÍSTICOS: %d\n", turismo02);
   
 return 0;
 }
