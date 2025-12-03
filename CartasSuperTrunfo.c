@@ -146,14 +146,30 @@ int main() {
   // COMPARAÇÃO ENTRE AS CARTAS
   // =============================================
   printf("-- Comparação de Cartas --\n");
-  // Compara cada atributo e mostra 1 se Carta 1 vencer, 0 se perder
   printf("População: Carta 1 venceu? (%d)\n", populacao01 > populacao02);           
   printf("Área: Carta 1 venceu? (%.0f)\n", area01 > area02);             
   printf("PIB: Carta 1 venceu (%.0f)\n", pib01 > pib02);                         
   printf("Pontos Turísticos: Cartas 1 venceu (%d)\n", turismo01 > turismo02);     
   printf("Densidade Populacional: Carta 1 venceu (%.0f)\n", densidade01 > densidade02); 
   printf("PIB per Capita: Carta 1 venceu (%.0f)\n", perCapita01 > perCapita02);    
-  printf("Super Poder: Carta 1 venceu (%.0f)\n", superPoder01 > superPoder02);     
+  printf("Super Poder: Carta 1 venceu (%.0f)\n", superPoder01 > superPoder02);
+
+  printf("\n");
+  printf("------------------------------------\n"); 
+
+  // =============================================
+  // COMPARAÇÃO DE ATRIBUTO ESPECÍFICO
+  // =============================================
+
+  printf("-- COMPARAÇÃO DE CARTAS (ATRIBUTO: turismo): --\n");
+  printf("Carta 01 - %s: %d\n", cidade01, turismo01);
+  printf("Carta 02 - %s: %d\n", cidade02, turismo02);
+  
+  if (turismo01 > turismo02){
+    printf("Resultado: Carta 01 (%s) venceu!", cidade01);
+  } else {
+    printf("Resultado: Carta 02 (%s) venceu!", cidade02);
+  }
 
   return 0;  
 }
